@@ -38,10 +38,15 @@
                 android:text="@string/decription_button"
                 android:id="@+id/decriptButton" android:layout_marginLeft="25dp"/>
         <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/testButton" android:text="@string/test" android:layout_marginLeft="10dp"/>
+        <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/encryption_button"
-                android:id="@+id/encryptButton" android:layout_marginLeft="80dp"/>
+                android:id="@+id/encryptButton" android:layout_marginLeft="10dp"/>
     </LinearLayout>
 </LinearLayout>
 

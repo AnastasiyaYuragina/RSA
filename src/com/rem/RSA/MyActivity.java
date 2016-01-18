@@ -15,6 +15,7 @@ public class MyActivity extends Activity {
 
     Button decriptButton;
     Button encriptButton;
+    Button testButton;
     EditText enterText;
     EditText encryptDecriptText;
     EditText key;
@@ -31,6 +32,7 @@ public class MyActivity extends Activity {
 
         decriptButton = (Button) findViewById(R.id.decriptButton);
         encriptButton = (Button) findViewById(R.id.encryptButton);
+        testButton = (Button) findViewById(R.id.testButton);
         enterText = (EditText) findViewById(R.id.editText);
         encryptDecriptText = (EditText) findViewById(R.id.decriptText);
         key = (EditText) findViewById(R.id.Key);
@@ -46,6 +48,14 @@ public class MyActivity extends Activity {
             @Override
             public void onClick(View v) {
                 encryptText();
+            }
+        });
+
+        testButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TestProgram test = new TestProgram();
+                test.testEncryption();
             }
         });
     }
