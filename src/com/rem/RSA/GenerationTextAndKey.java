@@ -1,12 +1,15 @@
 package com.rem.RSA;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 
 /**
  * Created by Anastasiya on 1/18/2016.
  */
 public class GenerationTextAndKey {
-    final int minRange = (int) ' ';
+    static  String TestTag = "TestTag";
+    final int minRange = (int) '!';
     final int maxRange = (int) '~';
 
     public String generationText (int sizeText) {
@@ -16,6 +19,8 @@ public class GenerationTextAndKey {
         for (int i = 0; i < size; i++) {
             arrayList.add((int)(minRange + (Math.random() * maxRange - minRange)));
         }
+
+        Log.v(TestTag, "min " + minRange + " max " + maxRange);
 
         StringBuilder builder = new StringBuilder(arrayList.size());
 

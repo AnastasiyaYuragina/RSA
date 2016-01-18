@@ -17,14 +17,14 @@ public class TestProgram {
     public void testEncryption () {
         Encryption encription = new Encryption(stringKey);
         messageEncrypted = encription.encryptMessage(stringText);
-        Log.v(TestTag, "Text " + stringText + " Key" + stringKey + " Encrypted text " + messageEncrypted);
+        Log.v(TestTag, "Text " + stringText + " Key " + stringKey + " Encrypted text " + messageEncrypted);
         testDecription();
     }
 
     public void testDecription () {
         Encryption encription = new Encryption(stringKey);
         messageDecipher = encription.decipherMessage(messageEncrypted);
-        if (messageDecipher == stringText) {
+        if (messageDecipher.equals(stringText)) {
             Log.v(TestTag, "Encrypted text " + messageEncrypted + " Key " + stringKey + " Decripted text " + messageDecipher + " decript text = text");
         } else
         {
