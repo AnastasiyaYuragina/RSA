@@ -38,7 +38,6 @@
                 android:text="@string/decription_button"
                 android:id="@+id/decriptButton" android:layout_marginLeft="25dp"/>
         <Button
-                style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/testButton" android:text="@string/test" android:layout_marginLeft="10dp"/>

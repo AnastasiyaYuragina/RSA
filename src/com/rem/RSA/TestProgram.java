@@ -9,7 +9,7 @@ public class TestProgram {
     static  String TestTag = "TestTag";
     GenerationTextAndKey generationTextAndKey = new GenerationTextAndKey();
     String stringText = generationTextAndKey.generationText(50);
-    String stringKey = generationTextAndKey.generationKey(10);
+    String stringKey = generationTextAndKey.generationText(10);
     String messageEncrypted;
     String messageDecipher;
 
