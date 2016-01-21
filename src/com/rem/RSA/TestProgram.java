@@ -19,6 +19,7 @@ public class TestProgram {
         Log.v(TestTag, "Text size " + randomTextSize + " Key size " + randomKeySize);
         int iIteration = iteration;
         for (int i = 0; i < iIteration; i++) {
+            Log.v(TestTag, "iteration = " + i);
             testEncryption();
         }
     }
