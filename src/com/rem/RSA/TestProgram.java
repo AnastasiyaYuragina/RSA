@@ -8,11 +8,20 @@ import android.util.Log;
 public class TestProgram {
     static  String TestTag = "TestTag";
     GenerationTextAndKey generationTextAndKey = new GenerationTextAndKey();
-    String stringText = generationTextAndKey.generationText(50);
-    String stringKey = generationTextAndKey.generationText(10);
+    int randomTextSize = (int)(8 + (Math.random() * 60 - 8));
+    int randomKeySize = (int)(2 + (Math.random() * 10 - 2));
+    String stringText = generationTextAndKey.generationText(randomTextSize);
+    String stringKey = generationTextAndKey.generationText(randomKeySize);
     String messageEncrypted;
     String messageDecipher;
 
+    public void cycleTest (int iteration) {
+        Log.v(TestTag, "Text size " + randomTextSize + " Key size " + randomKeySize);
+        int iIteration = iteration;
+        for (int i = 0; i < iIteration; i++) {
+            testEncryption();
+        }
+    }
 
     public void testEncryption () {
         Encryption encription = new Encryption(stringKey);

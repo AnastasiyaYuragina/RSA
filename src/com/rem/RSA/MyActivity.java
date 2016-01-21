@@ -55,7 +55,7 @@ public class MyActivity extends Activity {
             @Override
             public void onClick(View v) {
                 TestProgram test = new TestProgram();
-                test.testEncryption();
+                test.cycleTest(1000);
             }
         });
     }
